@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import {Navigation} from './compenent/Navigation';
+import Footer from './compenent/Footer'
+import About from './compenent/About';
+import ReactPlayer from 'react-player';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+return(
+<div>
+<Navigation/>
+<About/>
+<ReactPlayer controls width='200' height='300'  url="https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=484s"/>
+<Footer/>
+</div>
+
+
+
+    )
+
+
 }
 
-export default App;
+export default App
